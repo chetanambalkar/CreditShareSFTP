@@ -1,0 +1,12 @@
+<!-- logback.xml -->
+<configuration>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>C:\\Users\\cheta\\OneDrive\\Desktop\\Chetan\\</file> <!-- Log file location -->
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
